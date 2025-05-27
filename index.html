@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandiera Music - Discography</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/Backstreet_Boys_2019_by_Glenn_Francis.jpg" alt="Bandiera Music Logo" class="logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#releases">Releases</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search releases...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="label-info">
+            <div class="label-image">
+                <img src="images/ab67616d0000b2734c5da21b5cf1e726df3082d7.jfif" alt="Bandiera Music">
+            </div>
+            <div class="label-details">
+                <h1>Bandiera Music</h1>
+                <div class="label-meta">
+                    <span>Label</span>
+                    <span>Founded 2019</span>
+                    <span>Based in Italy</span>
+                </div>
+                <div class="label-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-bandcamp"></i></a>
+                </div>
+                <p class="label-description">
+                    Bandiera Music is an independent label focused on electronic music. 
+                    Our releases span across techno, house, and experimental genres.
+                </p>
+            </div>
+        </section>
+
+        <section class="releases-section" id="releases">
+            <h2>Releases <span class="release-count">(24)</span></h2>
+            <div class="sort-options">
+                <span>Sort by:</span>
+                <select id="sort-releases">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="title">Title</option>
+                    <option value="artist">Artist</option>
+                </select>
+            </div>
+            
+            <div class="releases-grid">
+                <!-- Release items will be populated by JavaScript -->
+            </div>
+            
+            <div class="pagination">
+                <button class="prev-page" disabled>Previous</button>
+                <span class="page-info">Page 1 of 3</span>
+                <button class="next-page">Next</button>
+            </div>
+        </section>
+
+        <section class="artists-section" id="artists">
+            <h2>Artists</h2>
+            <div class="artists-grid">
+                <!-- Artist items will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Backstreet_Boys_2019_by_Glenn_Francis.jpg" alt="Bandiera Music">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#releases">Releases</a></li>
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="contact">
+                <h3>Contact</h3>
+                <p>info@bandieramusic.com</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#"><i class="fab fa-bandcamp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 Bandiera Music. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+</html>
